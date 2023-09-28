@@ -1,33 +1,16 @@
 <template>
   <div>
-    <section class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h2>Erlebe WING TZUN</h2>
-          <p>
-            Wing Tzun ist eine reine Selbstverteidigung, in deren Mittelpunkt einmalige
-            Prinzipien stehen, die durch konzentriertes Üben und bewusstes
-            Sich-Einlassen erlernt und umgesetzt werden können. Dabei werden anfangs
-            Techniken und Abläufe unterrichtet, die aber nur Mittel zum Zweck sind. Ziel
-            ist die Ausprägung von wichtigen Fähigkeiten, die einem in
-            Konfliktsituationen jeglicher Art zur Verfügung stehen.
-          </p>
-          <ContentLinks
-            link-title="Die Wing Tzun Prinzipien"
-            link-title-attribute="Die Wing Tzun Prinzipien"
-            link="#prinzip"
-          />
-        </div>
-        <div class="col-12 col-md-6 hidden-sm hidden-xs d-flex justify-content-end">
-          <img 
-            src="~/assets/images/wt-prinzipien.jpg"
-            alt="Wing Tsun Prinzipien" 
-            width="357" 
-            height="420"
-          />
-        </div>
-      </div>
-    </section>
+    <ContentBlockGrid 
+      :class="{
+        'hidden-sm hidden-xs d-flex justify-content-end': condition
+      }"
+      headline="Erlebe WING TZUN" 
+      content="Wing Tzun ist eine reine Selbstverteidigung, in deren Mittelpunkt einmalige Prinzipien stehen, die durch konzentriertes Üben und bewusstes Sich-Einlassen erlernt und umgesetzt werden können. Dabei werden anfangs Techniken und Abläufe unterrichtet, die aber nur Mittel zum Zweck sind. Ziel ist die Ausprägung von wichtigen Fähigkeiten, die einem in Konfliktsituationen jeglicher Art zur Verfügung stehen." 
+      imageSrc="/images/wt-prinzipien.jpg" 
+      imageAltTag="Wing Tsun Prinzipien" 
+      imgWidth="357" 
+      imgHeight="420"
+    />
     <section>
       <div class="container">
         <div class="row">
@@ -60,7 +43,6 @@
             </p>
           </div>
         </div>
-        
       </div>
     </section>
     <section class="container-blau">
@@ -192,5 +174,6 @@ export default {
       title: "WING TZUN - Training in der Schule",
     };
   },
+  
 };
 </script>

@@ -16,7 +16,6 @@
             >Selbstverteidigung</a
           >
         </div>
-
       </div>
     </section>
     <section class="text-center">
