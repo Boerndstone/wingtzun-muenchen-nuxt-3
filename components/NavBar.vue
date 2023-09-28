@@ -41,7 +41,7 @@ export default {
       links: [
         {
           id: 1,
-          href: "home",
+          href: "/",
           name: "Home",
         },
         {

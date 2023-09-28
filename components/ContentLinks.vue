@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link :to="link" class="topMargin20ax link-container" :title="linkTitleAttribute">
+  <nuxt-link :to="link" class="topMargin20 link-container" :title="linkTitleAttribute">
     {{ linkTitle }}
-    <img src="~/assets/images/svg/arrow.svg" class="link-image" />
+    <IconsChevronRight />
   </nuxt-link>
 </template>
 <script>
